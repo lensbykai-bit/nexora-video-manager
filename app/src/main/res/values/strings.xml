@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Nexora Video Manager</string>
+    <string name="app_title">Video Manager</string>
+    <string name="app_subtitle">ស្វែងរក និងរៀបចំវីដេអូដែល Android អនុញ្ញាតឲ្យអ្នកចូលប្រើ។</string>
+    <string name="scan_videos">ស្វែងរកវីដេអូ / Scan Videos</string>
+    <string name="pick_video">ជ្រើសវីដេអូ / Pick Video</string>
+    <string name="ready">ត្រៀមរួចរាល់។ ចុច Scan Videos ដើម្បីចាប់ផ្តើម។</string>
+    <string name="permission_needed">ត្រូវការសិទ្ធិចូលប្រើវីដេអូ ដើម្បីស្វែងរក media របស់អ្នក។</string>
+    <string name="no_videos">មិនឃើញវីដេអូដែល Android អនុញ្ញាតឲ្យចូលប្រើទេ។</string>
+    <string name="selected_video">បានជ្រើស៖ %1$s</string>
+    <string name="videos_found">រកឃើញ %1$d វីដេអូ\n\n%2$s</string>
+    <string name="safety_note">Nexora Video Manager មិនបំបែក DRM ឬ encryption របស់កម្មវិធីផ្សេងទេ។ វាធ្វើការតែជាមួយ media ដែល Android អនុញ្ញាតឲ្យអ្នកចូលប្រើ។</string>
+</resources>
