@@ -1,8 +1,8 @@
-name: Build Android APK
+name: Build MovieScript Dub AI APK
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "moviescript-dub-ai-apk" ]
   workflow_dispatch:
 
 jobs:
@@ -26,9 +26,12 @@ jobs:
       - name: Build debug APK
         run: gradle assembleDebug
 
+      - name: Rename APK
+        run: cp app/build/outputs/apk/debug/app-debug.apk MovieScript-Dub-AI.apk
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Nexora-Video-Manager-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: MovieScript-Dub-AI-APK
+          path: MovieScript-Dub-AI.apk
           if-no-files-found: error
