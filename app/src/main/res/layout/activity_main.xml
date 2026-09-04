@@ -1,64 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="#07101D">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MovieScript Dub AI" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="26sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ElevenLabs • Auto Speaker • TTS" android:textColor="#F472B6" android:textSize="14sp" android:layout_marginBottom="18dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        <EditText android:id="@+id/elevenKey" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ElevenLabs API Key" android:inputType="textPassword" android:textColor="#FFFFFF" android:textColorHint="#8FA3BD"/>
+        <EditText android:id="@+id/geminiKey" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Gemini API Key (optional for translation)" android:inputType="textPassword" android:textColor="#FFFFFF" android:textColorHint="#8FA3BD" android:layout_marginTop="8dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NEXORA"
-            android:textStyle="bold"
-            android:textSize="14sp" />
+        <Button android:id="@+id/pickButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ជ្រើស Video / Audio" android:layout_marginTop="16dp"/>
+        <TextView android:id="@+id/fileText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="មិនទាន់ជ្រើស file" android:textColor="#AFC0D6" android:layout_marginTop="8dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/app_title"
-            android:textStyle="bold"
-            android:textSize="28sp" />
+        <Button android:id="@+id/transcribeButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Auto Script + ចាប់តួអង្គ" android:layout_marginTop="18dp"/>
+        <Button android:id="@+id/voicesButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Load Voices + Auto Assign" android:layout_marginTop="8dp"/>
+        <TextView android:id="@+id/mappingText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Speaker → Voice mapping នឹងបង្ហាញទីនេះ" android:textColor="#AFC0D6" android:padding="10dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/app_subtitle"
-            android:textSize="16sp" />
+        <Spinner android:id="@+id/modelSpinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+        <Button android:id="@+id/translateButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="បកប្រែទៅខ្មែរ" android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/voiceAllButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Voice All — Generate ទាំងអស់" android:layout_marginTop="8dp"/>
 
-        <Button
-            android:id="@+id/scanButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:text="@string/scan_videos" />
-
-        <Button
-            android:id="@+id/pickButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="@string/pick_video" />
-
-        <TextView
-            android:id="@+id/statusText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="@string/ready"
-            android:textSize="15sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="@string/safety_note"
-            android:textSize="13sp" />
+        <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="រួចរាល់។" android:textColor="#F9A8D4" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/scriptText" android:layout_width="match_parent" android:layout_height="360dp" android:gravity="top|start" android:hint="Script នឹងបង្ហាញទីនេះ" android:textColor="#FFFFFF" android:textColorHint="#7D91A9" android:background="#0D1829" android:padding="12dp" android:layout_marginTop="12dp" android:inputType="textMultiLine"/>
     </LinearLayout>
 </ScrollView>
